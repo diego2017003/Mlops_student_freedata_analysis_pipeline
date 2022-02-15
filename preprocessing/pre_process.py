@@ -17,8 +17,7 @@ def process_args(args,task):
     Arguments
         args - command line arguments
         args.input_artifact: Fully qualified name for the raw data artifact
-        args.artifact_name: Name for the W&B artifact that will be created
-        args.artifact_type: Type of the artifact to create
+        args.artifact_name: Name for the artifact that will be created
         args.artifact_description: Description for the artifact
     """
     
@@ -64,7 +63,7 @@ def process_args(args,task):
 
 
     # Remote temporary files
-   # os.remove(filename)
+    os.remove(filename)
 
 
 if __name__ == "__main__":

@@ -77,10 +77,6 @@ def process_args(args,URLS,task):
 
             temp.close()
 
-
-
-            # Make sure the file has been written to disk before uploading
-            # to W&B
             fp.flush()
 
             logger.report_text("artifact Uploaded")
@@ -119,6 +115,8 @@ if __name__ == "__main__":
     ARGS = parser.parse_args()
 
     task = Task.init(project_name="a ML example",task_name="Download Raw data")
+
+    #We can connect so we can replicate the experiment and change this mutable through ClearML webUI
     task.connect(URLS)
 
     logger = task.get_logger()
