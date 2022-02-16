@@ -1,0 +1,4 @@
+data_checks/great_expectations/uncommitted/
+data_checks/great_expectations/profilers
+data_checks/great_expectations/plugins
+.vscode

@@ -1,0 +1,587 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "students_expects",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "sexo",
+          "ano_nascimento",
+          "raca",
+          "estado_origem",
+          "cidade_origem",
+          "renda",
+          "possui_auxilio_alimentacao",
+          "possui_auxilio_transporte",
+          "possui_auxilio_residencia_moradia",
+          "grau_academico",
+          "area_conhecimento",
+          "descricao"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 11543,
+        "min_value": 11543
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "sexo",
+        "value_set": [
+          "F",
+          "M",
+          "false"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "sexo"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "sexo",
+        "max_value": 0.00025989777354240665,
+        "min_value": 0.00025989777354240665
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "sexo",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "ano_nascimento",
+        "max_value": 994,
+        "min_value": 994
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "ano_nascimento",
+        "max_value": 2003,
+        "min_value": 2003
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "ano_nascimento",
+        "max_value": 1996.182015074071,
+        "min_value": 1996.182015074071
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "ano_nascimento",
+        "max_value": 1998.0,
+        "min_value": 1998.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": "lower",
+        "column": "ano_nascimento",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              1987,
+              1987
+            ],
+            [
+              1995,
+              1995
+            ],
+            [
+              1998,
+              1998
+            ],
+            [
+              1999,
+              1999
+            ],
+            [
+              2001,
+              2001
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "ano_nascimento",
+        "value_set": [
+          1962,
+          1963,
+          1964,
+          1965,
+          1966,
+          1967,
+          1968,
+          1969,
+          1970,
+          1971,
+          1972,
+          1973,
+          1974,
+          1975,
+          1976,
+          1977,
+          1978,
+          1979,
+          1980,
+          1981,
+          1982,
+          1983,
+          1984,
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "ano_nascimento"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "ano_nascimento",
+        "max_value": 0.0037252014207744956,
+        "min_value": 0.0037252014207744956
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "ano_nascimento",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "Int8Dtype",
+          "Int16Dtype",
+          "Int32Dtype",
+          "Int64Dtype",
+          "UInt8Dtype",
+          "UInt16Dtype",
+          "UInt32Dtype",
+          "UInt64Dtype",
+          "INT",
+          "INTEGER",
+          "INT64",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "renda",
+        "max_value": 0,
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "renda",
+        "max_value": 220801,
+        "min_value": 220801
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "renda",
+        "max_value": 2895.7973663692283,
+        "min_value": 2895.7973663692283
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "renda",
+        "max_value": 1725.0,
+        "min_value": 1725.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": "lower",
+        "column": "renda",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              0,
+              0
+            ],
+            [
+              1016,
+              1016
+            ],
+            [
+              1725,
+              1725
+            ],
+            [
+              3117,
+              3117
+            ],
+            [
+              9086,
+              9086
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "renda"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "renda",
+        "max_value": 0.20583903664558606,
+        "min_value": 0.20583903664558606
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "renda",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "Int8Dtype",
+          "Int16Dtype",
+          "Int32Dtype",
+          "Int64Dtype",
+          "UInt8Dtype",
+          "UInt16Dtype",
+          "UInt32Dtype",
+          "UInt64Dtype",
+          "INT",
+          "INTEGER",
+          "INT64",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "possui_auxilio_alimentacao",
+        "value_set": [
+          false,
+          true
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "possui_auxilio_alimentacao"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "possui_auxilio_alimentacao",
+        "max_value": 0.00017326518236160444,
+        "min_value": 0.00017326518236160444
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "possui_auxilio_alimentacao",
+        "type_list": [
+          "BOOLEAN",
+          "boolean",
+          "BOOL",
+          "TINYINT",
+          "BIT",
+          "bool",
+          "BooleanType"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "possui_auxilio_transporte",
+        "value_set": [
+          false,
+          true
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "possui_auxilio_transporte"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "possui_auxilio_transporte",
+        "max_value": 0.00017326518236160444,
+        "min_value": 0.00017326518236160444
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "possui_auxilio_transporte",
+        "type_list": [
+          "BOOLEAN",
+          "boolean",
+          "BOOL",
+          "TINYINT",
+          "BIT",
+          "bool",
+          "BooleanType"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "possui_auxilio_residencia_moradia",
+        "value_set": [
+          false,
+          true
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "possui_auxilio_residencia_moradia"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "possui_auxilio_residencia_moradia",
+        "max_value": 0.00017326518236160444,
+        "min_value": 0.00017326518236160444
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "possui_auxilio_residencia_moradia",
+        "type_list": [
+          "BOOLEAN",
+          "boolean",
+          "BOOL",
+          "TINYINT",
+          "BIT",
+          "bool",
+          "BooleanType"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "descricao",
+        "value_set": [
+          "APROVADO",
+          "FALHOU",
+          "INDEFERIDO",
+          "REPROVADO POR NOTA E FALTA"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "descricao"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "descricao",
+        "max_value": 0.0003465303647232089,
+        "min_value": 0.0003465303647232089
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "descricao",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "preprocessed_data.csv",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "pre_processed_students",
+          "limit": 1000
+        },
+        "citation_date": "2022-02-16T01:57:33.370905Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.14.6"
+  }
+}
