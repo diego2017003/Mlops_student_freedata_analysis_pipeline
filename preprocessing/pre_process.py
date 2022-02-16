@@ -44,7 +44,8 @@ def process_args(args,task):
      "EXCLUIDA":"FALHOU",
     "CANCELADO":"FALHOU",
     "REPROVADO POR MÉDIA E POR FALTAS":"FALHOU",
-    "REPROVADO":"FALHOU"
+    "REPROVADO":"FALHOU",
+    "REPROVADO POR NOTA E FALTA": "FALHOU"
     }
 
     df = df.query('descricao != "INDEFERIDO"')
