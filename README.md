@@ -54,13 +54,14 @@ descricao_tipo_cota,ano,periodo,renda,
 possui_bolsa_pesquisa,possui_auxilio_alimentacao,
 possui_auxilio_transporte,possui_auxilio_residencia_moradia,
 id_curso,area_conhecimento,id_turma,reposicao,descricao,numero_total_faltas)
-
 Os dados gerados durante o Download estão disponíveis no diretório Dados.
+
 ---
 ## 2. data_checks
 ---
 Essa etapa diz respeito à integridade dos dados em relações gerais e estrutrais com métricas rápidas.
 ---
+
 ## 3. preprocessing
 ---
 Esta etapa faz transformações nos dados com o intuíto de selecionar e adaptar as colunas para o modelo
@@ -80,6 +81,24 @@ download, as colunas que serão empregues no modelo são as seguintes:
   10. 'possui_auxilio_residencia_moradia': informa se o discente possui auxilio moradia |Campo binário
   11. 'grau_academico': grau acadêmico do curso |Campo categórico
   12. 'descricao': informa se o discente foi aprovado ou reprovado no semestre estudado |Campo binário
-  
+
+---
+## 4. segregate
+---
+Essa etapa faz a amostragem estratificada da coluna alvo com 70% do dataset para treino e 30% para teste, 
+ambas amostragens são salvas no clearml como artefatos para que posteriormente possamos usar os dados de 
+treino no modelo e os dados de teste no evaluate.
+*Apesar dos arquivos presentes nesse repositório essa etapa não fez parte do pipeline em produção, está no
+projeto para projetos futuros e exemplificação*
+
+---
+## 5. Model
+---
+Nesta etapa é feito o tratamento dos dados para a criação do modelo de classificação com o intuito de prever se 
+o discente seria aprovado ou reprovado no semestre de 2020.5. Para a criação do modelo é feito um pipeline no 
+scikit-learn para encadear tarefas de adequação dos dados categóricos e dados numéricos antes do treinamento do modelo.
+
+O modelo escolhido para classificação foi a regresão logística, e essa escolha incluindo os melhores parâmetros, foram 
+decididos com a execução da ferramenta de automl pycaret, essa etapa está presente no notebook no diretório de models.
 
 
