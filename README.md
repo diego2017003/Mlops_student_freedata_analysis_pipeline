@@ -121,4 +121,4 @@ No diretório base está o arquivo .py que "monta" o pipeline de dados engloband
 ---
 ## 7. link no Medium:
 ---
-[Há um artigo no Médium a respeito do projeto](https://medium.com/@reynejmg/f7083b6648a0) 
+[Há um artigo no Médium a respeito do projeto com mais informações](https://medium.com/@reynejmg/f7083b6648a0) 
