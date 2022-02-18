@@ -56,3 +56,6 @@ def segregate_dataset():
     task.upload_artifact(name="test_data", artifact_object=filename_test,metadata=dict(
                                     description="Dados para teste do modelo"
     ))
+
+if __name__ == "__main__":
+    segregate_dataset()
