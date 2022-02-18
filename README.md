@@ -117,3 +117,8 @@ Apesar disso modelos experimentais se encontram no diretório Models/mlops0/arti
 ## 6. Criação do pipeline
 ---
 No diretório base está o arquivo .py que "monta" o pipeline de dados englobando desde o download até o treinamento do modelo.
+
+---
+## 7. link no Medium:
+---
+[Há um artigo no Médium a respeito do projeto](https://medium.com/@reynejmg/f7083b6648a0) 
