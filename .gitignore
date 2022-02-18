@@ -2,3 +2,6 @@ data_checks/great_expectations/uncommitted/
 data_checks/great_expectations/profilers
 data_checks/great_expectations/plugins
 .vscode
+__pycache__/
+model_training/__pycache__/
+flagged/
