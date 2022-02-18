@@ -112,7 +112,6 @@ e a precisão, entretanto os modelos encontrados tiveram desempenho piores que a
 É possível que se forem expandido os Parâmetros de busca do GridSearch os melhores parâmetros mudem para as mesmas métricas.
 Apesar disso modelos experimentais se encontram no diretório Models/mlops0/artifacts.
 
-Apesar da regressão logística apresentar métricas melhores, o modelo ainda classificou a grande maioria dos dados de teste como "APROVADO"
 
 ---
 ## 6. Criação do pipeline
