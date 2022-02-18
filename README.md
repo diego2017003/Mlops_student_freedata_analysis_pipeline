@@ -5,7 +5,7 @@
  do estudante que possam ter interferido no seu desempenho, durante o primeiro semestre remoto 
  após o início da Pandemia do COVID-19 no Brasil em 2020.
  
- ---
+
  ## 0. Observações importantes
  ---
  Este projeto foi desenvolvido para a avaliação da disciplina DCA0305 - mlops, e tem como principal 
@@ -31,7 +31,7 @@
   As principais bibliotecas utilizadas podem ser vistas no arquivo "requirements.txt"
   O pipeline das tarefas estão escritas como um todo no arquivo "pipeline.py" e para a criação do pipeline foi utilizada
   a ferramenta de mlops ["clearml"](https://clear.ml/) 
-  ---
+ 
  
  ## 1. Download
  ---
@@ -56,11 +56,11 @@ possui_auxilio_transporte,possui_auxilio_residencia_moradia,
 id_curso,area_conhecimento,id_turma,reposicao,descricao,numero_total_faltas)
 Os dados gerados durante o Download estão disponíveis no diretório Dados.
 
----
+
 ## 2. data_checks
 ---
 Essa etapa diz respeito à integridade dos dados em relações gerais e estrutrais com métricas rápidas.
----
+
 
 ## 3. preprocessing
 ---
@@ -82,7 +82,7 @@ download, as colunas que serão empregues no modelo são as seguintes:
   11. 'grau_academico': grau acadêmico do curso |Campo categórico
   12. 'descricao': informa se o discente foi aprovado ou reprovado no semestre estudado |Campo binário
 
----
+
 ## 4. segregate
 ---
 Essa etapa faz a amostragem estratificada da coluna alvo com 70% do dataset para treino e 30% para teste, 
@@ -91,7 +91,7 @@ treino no modelo e os dados de teste no evaluate.
 *Apesar dos arquivos presentes nesse repositório essa etapa não fez parte do pipeline em produção, está no
 projeto para projetos futuros e exemplificação*
 
----
+
 ## 5. Model
 ---
 Nesta etapa é feito o tratamento dos dados para a criação do modelo de classificação com o intuito de prever se 
@@ -113,12 +113,12 @@ e a precisão, entretanto os modelos encontrados tiveram desempenho piores que a
 Apesar disso modelos experimentais se encontram no diretório Models/mlops0/artifacts.
 
 
----
+
 ## 6. Criação do pipeline
 ---
 No diretório base está o arquivo .py que "monta" o pipeline de dados englobando desde o download até o treinamento do modelo.
 
----
+
 ## 7. link no Medium:
 ---
 [Há um artigo no Médium a respeito do projeto com mais informações](https://medium.com/@reynejmg/f7083b6648a0) 
