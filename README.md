@@ -6,7 +6,7 @@
  após o início da Pandemia do COVID-19 no Brasil em 2020.
  
 
- ## 0. Observações importantes
+## 0. Observações importantes
  ---
  Este projeto foi desenvolvido para a avaliação da disciplina DCA0305 - mlops, e tem como principal 
  intuito a criação do pipeline de machine learning passando por todas as etapas:
@@ -112,6 +112,7 @@ e a precisão, entretanto os modelos encontrados tiveram desempenho piores que a
 É possível que se forem expandido os Parâmetros de busca do GridSearch os melhores parâmetros mudem para as mesmas métricas.
 Apesar disso modelos experimentais se encontram no diretório Models/mlops0/artifacts.
 
+<center>![not impressive](https://www.intrinseca.com.br/blog/wp-content/uploads/2016/02/giphy1.gif)</center>
 
 
 ## 6. Criação do pipeline
