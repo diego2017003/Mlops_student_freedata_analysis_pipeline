@@ -112,7 +112,7 @@ e a precisão, entretanto os modelos encontrados tiveram desempenho piores que a
 É possível que se forem expandido os Parâmetros de busca do GridSearch os melhores parâmetros mudem para as mesmas métricas.
 Apesar disso modelos experimentais se encontram no diretório Models/mlops0/artifacts.
 
-<center>![not impressive](https://www.intrinseca.com.br/blog/wp-content/uploads/2016/02/giphy1.gif)</center>
+![not impressive](https://www.intrinseca.com.br/blog/wp-content/uploads/2016/02/giphy1.gif)
 
 
 ## 6. Criação do pipeline
