@@ -97,8 +97,24 @@ projeto para projetos futuros e exemplificação*
 Nesta etapa é feito o tratamento dos dados para a criação do modelo de classificação com o intuito de prever se 
 o discente seria aprovado ou reprovado no semestre de 2020.5. Para a criação do modelo é feito um pipeline no 
 scikit-learn para encadear tarefas de adequação dos dados categóricos e dados numéricos antes do treinamento do modelo.
+Portanto, inicialmente é feito one label encoding and one hot encoding para os dados categóricos, com preenchimentos de 
+dados faltantes pelo dado mais repetido. E os dados numéricos são preenchidos pela mediana e filtrados no intuito de retirar 
+os outliers.
 
 O modelo escolhido para classificação foi a regresão logística, e essa escolha incluindo os melhores parâmetros, foram 
-decididos com a execução da ferramenta de automl pycaret, essa etapa está presente no notebook no diretório de models.
+decididos com a execução da ferramenta de automl pycaret, essa etapa está presente no notebook no diretório de models. 
 
+Algumas observações tem que ser feitas nessa etapa, as categorias na coluna alvo são desbalanceadas e portanto se o modelo
+classificar todas as instâncias pelo valor que mais se repete, a acurácia continuará a ser alta apesar da classificação ser 
+incorreta. O modelo com métricas mais altas além da acurácia foi a regressão logística, entretanto foram realizadas duas 
+experimentações de mlps com sklearn.GridSearch para buscar os melhores parâmetros que otimizassem a precisão média macro 
+e a precisão, entretanto os modelos encontrados tiveram desempenho piores que a regressão logística para os parâmetros encontrados.
+É possível que se forem expandido os Parâmetros de busca do GridSearch os melhores parâmetros mudem para as mesmas métricas.
+Apesar disso modelos experimentais se encontram no diretório Models/mlops0/artifacts.
 
+Apesar da regressão logística apresentar métricas melhores, o modelo ainda classificou a grande maioria dos dados de teste como "APROVADO"
+
+---
+## 6. Criação do pipeline
+---
+No diretório base está o arquivo .py que "monta" o pipeline de dados englobando desde o download até o treinamento do modelo.
