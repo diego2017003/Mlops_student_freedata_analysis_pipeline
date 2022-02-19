@@ -1,11 +1,12 @@
 # A MLops Pipeline
+
+![Design sem nome](https://user-images.githubusercontent.com/30417399/154780175-5caf08f2-74dc-4fbe-a0aa-1cecf98b93c3.png)
 ---
  Este repositório diz respeito a um projeto de mlops com o intuito de pegar e 
  relacionar os dados abertos da UFRN no intuito de estudar caracteríscticas sócio-economicas 
  do estudante que possam ter interferido no seu desempenho, durante o primeiro semestre remoto 
  após o início da Pandemia do COVID-19 no Brasil em 2020.
  
-![Design sem nome](https://user-images.githubusercontent.com/30417399/154780175-5caf08f2-74dc-4fbe-a0aa-1cecf98b93c3.png)
 
 ## 0. Observações importantes
  ---
