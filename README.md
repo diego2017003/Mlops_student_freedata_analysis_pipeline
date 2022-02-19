@@ -64,7 +64,8 @@ Os dados gerados durante o Download estão disponíveis no diretório Dados.
 
 ## 2. data_checks
 ---
-Essa etapa diz respeito à integridade dos dados em relações gerais e estrutrais com métricas rápidas.
+Essa etapa diz respeito à integridade dos dados em relações gerais e estrutrais com métricas rápidas. Além 
+disso o data_checks pode ser consultado com uma interface gráfica pelo [link](https://diego2017003.github.io/Mlops_student_freedata_analysis_pipeline/data_checks/expectativas_perfil/index.html)
 
 
 ## 3. preprocessing
