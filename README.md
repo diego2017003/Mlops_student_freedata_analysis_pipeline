@@ -129,8 +129,8 @@ No diretório base está o arquivo .py que "monta" o pipeline de dados engloband
 
 ## 7. Deploy da aplicação
 ---
-A aplicação funcionando pode ser acessada através desse [link](https://huggingface.co/spaces/Reyne/apontador). E portanto o usuário 
-poderá simular qual teria sido sua chance de aprovação e reprovação para o semestre 2020.5 da UFRN.
+A aplicação funcionando pode ser acessada através desse [link](https://huggingface.co/spaces/Reyne/apontador). E dessa forma
+o usuário poderá simular qual teria sido sua chance de aprovação e reprovação para o semestre 2020.5 da UFRN.
 
 >>![APP](https://user-images.githubusercontent.com/30417399/154777654-e7dc8ccc-8912-4d37-baf6-58412d18e87f.PNG)
 
