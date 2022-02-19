@@ -67,6 +67,8 @@ Os dados gerados durante o Download estão disponíveis no diretório Dados.
 Essa etapa diz respeito à integridade dos dados em relações gerais e estrutrais com métricas rápidas. Além 
 disso o data_checks pode ser consultado com uma interface gráfica pelo [link](https://diego2017003.github.io/Mlops_student_freedata_analysis_pipeline/data_checks/expectativas_perfil/index.html)
 
+>>![data_checks](https://user-images.githubusercontent.com/30417399/154777785-0cb172a9-2b9e-4d49-84a8-afe2374e2071.PNG)
+
 
 ## 3. preprocessing
 ---
@@ -125,7 +127,14 @@ Apesar disso modelos experimentais se encontram no diretório Models/mlops0/arti
 ---
 No diretório base está o arquivo .py que "monta" o pipeline de dados englobando desde o download até o treinamento do modelo.
 
+## 7. Deploy da aplicação
+---
+A aplicação funcionando pode ser acessada através desse [link](https://huggingface.co/spaces/Reyne/apontador). E portanto o usuário 
+poderá simular qual teria sido sua chance de aprovação e reprovação para o semestre 2020.5 da UFRN.
 
-## 7. link no Medium:
+>>![APP](https://user-images.githubusercontent.com/30417399/154777654-e7dc8ccc-8912-4d37-baf6-58412d18e87f.PNG)
+
+
+## 8. link no Medium:
 ---
 [Há um artigo no Médium a respeito do projeto com mais informações](https://medium.com/@reynejmg/f7083b6648a0) 
