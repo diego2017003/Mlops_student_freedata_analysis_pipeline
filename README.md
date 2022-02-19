@@ -5,9 +5,6 @@
  do estudante que possam ter interferido no seu desempenho, durante o primeiro semestre remoto 
  após o início da Pandemia do COVID-19 no Brasil em 2020.
 
-![pairplot](https://user-images.githubusercontent.com/30417399/154776416-79e5150a-d9a3-4d3d-8265-1bf61304803c.png)
-
-
 
 ## 0. Observações importantes
  ---
