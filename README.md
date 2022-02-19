@@ -1,4 +1,4 @@
-# Mlops_student_freedata_analysis_pipeline
+# A MLops Pipeline
 ---
  Este repositório diz respeito a um projeto de mlops com o intuito de pegar e 
  relacionar os dados abertos da UFRN no intuito de estudar caracteríscticas sócio-economicas 
