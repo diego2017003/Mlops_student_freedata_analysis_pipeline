@@ -4,7 +4,10 @@
  relacionar os dados abertos da UFRN no intuito de estudar caracteríscticas sócio-economicas 
  do estudante que possam ter interferido no seu desempenho, durante o primeiro semestre remoto 
  após o início da Pandemia do COVID-19 no Brasil em 2020.
- 
+
+![pairplot](https://user-images.githubusercontent.com/30417399/154776416-79e5150a-d9a3-4d3d-8265-1bf61304803c.png)
+
+
 
 ## 0. Observações importantes
  ---
@@ -16,22 +19,24 @@
   4. Segregação dos dados (Segregate)
   5. Treinamento do modelo (model_training | Model)
   
-  É importante notar que não há uma etapa de avaliação pós treinamento(evaluate), Para isso foi gerado apenas a 
-  matriz de confusão dentro do treinamento do modelo gerando um mapa de calor no seaborn normalizado que
-  exibe a matriz com valores no intervalo [0 , 1]. É possível notar outras métricas dentro dos notebooks
-  como precisão, acurácia, f1-score, precisão média. 
+  É importante notar que não há uma etapa de avaliação pós treinamento(evaluate), Para isso foi gerado 
+  apenas a matriz de confusão dentro do treinamento do modelo gerando um mapa de calor no seaborn 
+  normalizado que exibe a matriz com valores no intervalo [0 , 1]. É possível notar outras métricas 
+  dentro dos notebook como precisão, acurácia, f1-score, precisão média. 
   
-  Outro ponto a se notar diz respeito ao formato de arquivos encontrados no projeto. os diretórios: Download , 
-  Model, Segregate; possuem notebooks com o rascunho do processo, cada notebook é estruturado somente no intuito 
-  de prototipar o conceito inicial da etapa e portanto são arquivos funcionais entretanto não são estruturados para
-  ambiente de produção. Todos os diretório presentes nesse repositório que foram listados como etapas do mlops possuem 
-  arquivos ".py" que representam o verdadeiro a tarefa do pipeline de maneira organizada e utilizando conceitos de 
-  código limpo. 
+  Outro ponto a se notar diz respeito ao formato de arquivos encontrados no projeto. os diretórios: 
+  Download , Model, Segregate; possuem notebooks com o rascunho do processo, cada notebook é estruturado
+  somente no intuito de prototipar o conceito inicial da etapa e portanto são arquivos funcionais 
+  entretanto não são estruturados para ambiente de produção. Todos os diretório presentes nesse 
+  repositório que foram listados como etapas do mlops possuem arquivos ".py" que representam o 
+  verdadeiro a tarefa do pipeline de maneira organizada e utilizando conceitos de código limpo. 
   
   As principais bibliotecas utilizadas podem ser vistas no arquivo "requirements.txt"
   O pipeline das tarefas estão escritas como um todo no arquivo "pipeline.py" e para a criação do pipeline foi utilizada
   a ferramenta de mlops ["clearml"](https://clear.ml/) 
  
+ > ![Clearml](https://user-images.githubusercontent.com/30417399/154776632-2a67c9bd-945e-4683-9bbf-fafb071a47af.PNG)
+
  
  ## 1. Download
  ---
@@ -112,7 +117,7 @@ e a precisão, entretanto os modelos encontrados tiveram desempenho piores que a
 É possível que se forem expandido os Parâmetros de busca do GridSearch os melhores parâmetros mudem para as mesmas métricas.
 Apesar disso modelos experimentais se encontram no diretório Models/mlops0/artifacts.
 
-![not impressive](https://www.intrinseca.com.br/blog/wp-content/uploads/2016/02/giphy1.gif)
+> ![not impressive](https://www.intrinseca.com.br/blog/wp-content/uploads/2016/02/giphy1.gif)
 
 
 ## 6. Criação do pipeline
